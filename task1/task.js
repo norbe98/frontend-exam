@@ -10,6 +10,11 @@ export function getLongestBookByAuthorName(authors, books, authorName) {
   //Author books
   const allBooksByAuthor = books.filter(book => book.author_id === author.id)
 
+
+  if(allBooksByAuthor.length === 0) {
+    return null
+  }
+
   allBooksByAuthor.sort((a, b) => {
     if (b.pages !== a.pages) {
       return b.pages - a.pages
