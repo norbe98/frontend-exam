@@ -1,0 +1,73 @@
+
+html {
+    font-size: 16px;
+    background-color: #f9f5f0;
+    color: #45171d;
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: "bold";
+    margin: 0;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.book h2 {
+    font-size: 1.5rem;
+    font-weight: "bold";
+    margin: 0;
+}
+
+.book-informations {
+    font-style: italic;
+    margin: 0;
+}
+
+.content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.25rem;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.book-container {
+    max-width: 600px;
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer {
+    border-top: 1px solid black;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin-top: 1rem;
+    font-style: italic;
+    text-align: right;
+}
+
+@media (max-width: 400px) {
+    .content {
+        display: none;
+    }
+}
+
+
+
+
